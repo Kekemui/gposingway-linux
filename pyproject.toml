@@ -1,0 +1,20 @@
+[project]
+name = "gposingway-linux"
+version = "0.1.0"
+description = "Tool for installing ReShade and GPosingway shaders and presets to FFXIV on Linux."
+authors = [
+    {name = "Kekemui",email = "kekemui@kekemui.gg"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "steam[client] (>=1.4.4,<2.0.0)",
+    "vdf (>=3.4,<4.0)",
+    "xdg-base-dirs (>=6.0.2,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
